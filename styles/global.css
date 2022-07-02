@@ -5,6 +5,7 @@
   --third-color: #d49311;
   --fourth-color: #271f57;
   --white-color: #ffffff;
+  --btn-cv-color: #ffffff;
   --text-color: #000000;
   --black-color: #000;
   --grey-color: #f8f8f8;
@@ -38,6 +39,7 @@
   --grey-4-color: #454e56;
   --grey-5-color: #f8f8f8;
   --grey-6-color: #12181b;
+  --btn-cv-color:#000;
 }
 
 /* ******************* RESET  ********************** */
@@ -308,6 +310,7 @@ section {
 
 .header-ctn .lower-ctn .left-header .ctn .name {
   font-size: 3rem;
+  color: #ffffff;
   z-index: 1;
 }
 
@@ -316,6 +319,7 @@ section {
 }
 
 .header-ctn .lower-ctn .left-header .ctn p {
+  color: #ffffff;
   margin: 1.5rem 0;
   line-height: 2rem;
   z-index: 1;
@@ -816,6 +820,7 @@ section {
 
 .main-btn .btn-txt {
   padding: 0 2rem;
+  color: var(--btn-cv-color);
 }
 
 .main-btn .btn-icon {
@@ -831,6 +836,7 @@ section {
           justify-content: center;
   border-radius: 50%;
   padding: 1rem;
+  color: #ffffff;
 }
 
 .main-btn::before {
