@@ -43,19 +43,20 @@ export default function Home() {
               <div className="ctn">
                 <h1 className="name">
                   Hola, Yo soy
+                  <br />
                   <span className="name"> Henry Eraso.</span>
                   <br />
                   Un Ingeniero de Petróleos.
                 </h1>
                 <p>
-                  Soy un ingeniero de petroleos y apasionado por el desarrollo
-                  web, quien se especializa en contruir y diseñar trabajos
-                  excepcionales. Actualmente, estoy terminando mi carrera
-                  enfocado en la ingenieria de yacimientos y desarrollo de
-                  software.
+                  Soy un ingeniero de petroleos apasionado por la programación,
+                  quien se especializa en contruir y diseñar trabajos
+                  excepcionales. Actualmente, estoy terminando mi carrera con un
+                  enfocado en la ingenieria de yacimientos, ademas de
+                  profundizar en el desarrollo de software.
                 </p>
                 <div className="btn-con">
-                  <a href="" className="main-btn">
+                  <a href="/curriculum vitae.pdf" className="main-btn" target="_blank" rel="noopener noreferrer">
                     <span className="btn-txt">Descargar CV</span>
                     <span className="btn-icon">
                       <FontAwesomeIcon icon={faFileArrowDown} />
@@ -87,7 +88,7 @@ export default function Home() {
                 en la ingenieria de yacimientos y desarrollo de software.
               </p>
               <div className="btn-con">
-                <a href="" className="main-btn">
+                <a href="/curriculum vitae.pdf" className="main-btn" target="_blank" rel="noopener noreferrer">
                   <span className="btn-txt">Descargar CV</span>
                   <span className="btn-icon">
                     <FontAwesomeIcon icon={faFileArrowDown} />
@@ -112,24 +113,26 @@ export default function Home() {
         >
           <div className="main-title">
             <h2>
-              About <span>me</span>
+              Acerca de <span>Mi</span>
               <span className="bg-text">my stats</span>
             </h2>
           </div>
           <div className="about-container">
             <div className="left-about">
-              <h4>Information About me</h4>
+              <h4>Información Personal</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                labore nihil obcaecati consequatur. Debitis error doloremque,
-                vero eos vel nemo eius voluptatem dicta tenetur modi. <br />{" "}
-                <br /> La musica delectus dolore fugiat exercitationem a, ipsum
-                quidem quo enim natus accusamus labore dolores nam. Unde. Lorem
-                ipsum dolor sit amet consectetur, adipisicing elit. Harum non
-                necessitatibus deleniti eum soluta.
+                Estudiante de Ingeniería de Petróleos de la Universidad
+                Industrial de Santander. Me destaco por realizar proyectos con
+                gran dedicación, organización, responsabilidad y compromiso. A
+                pesar de mi falta de elaboración en campo, me he destacado por
+                interpretar de la mejor manera los fundamentos teóricos.
+                <br /> Además los trabajos en ambientes laborales no petroleros,
+                me han formado como alguien con habilidades comunicativas para
+                laborar en equipo y siempre adaptándome al ambiente de trabajo.
+                <br />
               </p>
               <div className="btn-con">
-                <a href="" className="main-btn">
+                <a href="/curriculum vitae.pdf" className="main-btn" target="_blank" rel="noopener noreferrer">
                   <span className="btn-txt">Descargar CV</span>
                   <span className="btn-icon">
                     <FontAwesomeIcon icon={faFileArrowDown} />
@@ -138,47 +141,18 @@ export default function Home() {
               </div>
             </div>
             <div className="right-about">
-              <div className="about-item">
-                <div className="abt-text">
-                  <p className="large-text">650+</p>
-                  <p className="small-text">
-                    Projects <br /> Completed
-                  </p>
-                </div>
-              </div>
-              <div className="about-item">
-                <div className="abt-text">
-                  <p className="large-text">10+</p>
-                  <p className="small-text">
-                    Years of <br /> experience
-                  </p>
-                </div>
-              </div>
-              <div className="about-item">
-                <div className="abt-text">
-                  <p className="large-text">300+</p>
-                  <p className="small-text">
-                    Happy <br /> Clients
-                  </p>
-                </div>
-              </div>
-              <div className="about-item">
-                <div className="abt-text">
-                  <p className="large-text">400+</p>
-                  <p className="small-text">
-                    Customer <br /> reviews
-                  </p>
-                </div>
+              <div className="image">
+                <img src="/photo.jpg" alt="Mi foto" />
               </div>
             </div>
           </div>
           <div className="about-stats">
-            <h4 className="stat-title">My Skills</h4>
+            <h4 className="stat-title">Mis Habilidades</h4>
             <div className="progress-bars">
               <div className="progress-bar">
                 <p className="prog-title">html5</p>
                 <div className="progress-con">
-                  <p className="prog-text">80%</p>
+                  <p className="prog-text">90%</p>
                   <div className="progress">
                     <span className="html"></span>
                   </div>
@@ -187,14 +161,14 @@ export default function Home() {
               <div className="progress-bar">
                 <p className="prog-title">css3</p>
                 <div className="progress-con">
-                  <p className="prog-text">95%</p>
+                  <p className="prog-text">80%</p>
                   <div className="progress">
                     <span className="css"></span>
                   </div>
                 </div>
               </div>
               <div className="progress-bar">
-                <p className="prog-title">javascript</p>
+                <p className="prog-title">JavaScript</p>
                 <div className="progress-con">
                   <p className="prog-text">75%</p>
                   <div className="progress">
@@ -203,7 +177,16 @@ export default function Home() {
                 </div>
               </div>
               <div className="progress-bar">
-                <p className="prog-title">ReactJS</p>
+                <p className="prog-title">Node js</p>
+                <div className="progress-con">
+                  <p className="prog-text">70%</p>
+                  <div className="progress">
+                    <span className="node"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <p className="prog-title">React js</p>
                 <div className="progress-con">
                   <p className="prog-text">75%</p>
                   <div className="progress">
@@ -212,108 +195,109 @@ export default function Home() {
                 </div>
               </div>
               <div className="progress-bar">
-                <p className="prog-title">NodeJS</p>
+                <p className="prog-title">Next js</p>
                 <div className="progress-con">
-                  <p className="prog-text">87%</p>
+                  <p className="prog-text">75%</p>
                   <div className="progress">
-                    <span className="node"></span>
+                    <span className="next"></span>
                   </div>
                 </div>
               </div>
               <div className="progress-bar">
                 <p className="prog-title">Python</p>
                 <div className="progress-con">
-                  <p className="prog-text">70%</p>
+                  <p className="prog-text">90%</p>
                   <div className="progress">
                     <span className="python"></span>
                   </div>
                 </div>
               </div>
+              <div className="progress-bar">
+                <p className="prog-title">Django</p>
+                <div className="progress-con">
+                  <p className="prog-text">70%</p>
+                  <div className="progress">
+                    <span className="django"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <p className="prog-title">Fast API</p>
+                <div className="progress-con">
+                  <p className="prog-text">60%</p>
+                  <div className="progress">
+                    <span className="fastapi"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <p className="prog-title">git & github</p>
+                <div className="progress-con">
+                  <p className="prog-text">70%</p>
+                  <div className="progress">
+                    <span className="git"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <p className="prog-title">Graphql</p>
+                <div className="progress-con">
+                  <p className="prog-text">60%</p>
+                  <div className="progress">
+                    <span className="graphql"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <p className="prog-title">Machine learning</p>
+                <div className="progress-con">
+                  <p className="prog-text">55%</p>
+                  <div className="progress">
+                    <span className="machine-l"></span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <h4 className="stat-title">My Timeline</h4>
+          <h4 className="stat-title">Mi linea de tiempo</h4>
           <div className="timeline">
             <div className="timeline-item">
               <div className="tl-icon">
                 <i className="fas fa-briefcase"></i>
               </div>
-              <p className="tl-duration">2010 - present</p>
+              <p className="tl-duration">2015 - presente</p>
               <h5>
-                Web Developer<span> - Vircrosoft</span>
+                Ingeniería de Petróleos{" "}
+                <span> • Universidad Industrial de Santander</span>
               </h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                quasi vero fugit.
-              </p>
+              <p>Fecha prevista de finalización: 2022.</p>
             </div>
             <div className="timeline-item">
               <div className="tl-icon">
                 <i className="fas fa-briefcase"></i>
               </div>
-              <p className="tl-duration">2008 - 2011</p>
+              <p className="tl-duration">10/2019 - 11/2019</p>
               <h5>
-                Software Engineer<span> - Boogle, Inc.</span>
+                Curso de Introducción a CMG y CMOST para Aplicaciones Térmicas
+                <span> • Universidad Industrial de Santander</span>
               </h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                quasi vero fugit.
-              </p>
+              <p>Duración: 40 horas</p>
             </div>
             <div className="timeline-item">
               <div className="tl-icon">
                 <i className="fas fa-briefcase"></i>
               </div>
-              <p className="tl-duration">2016 - 2017</p>
+              <p className="tl-duration">03/2021 - 12/2021</p>
               <h5>
-                C++ Programmer<span> - Slime Tech</span>
+                Programa de formación habilidades en programación con énfasis en
+                desarrollo de aplicaciones móviles
+                <span> • Mision Tic 2022 - Universidad de Antioquia</span>
               </h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                quasi vero fugit.
-              </p>
-            </div>
-            <div className="timeline-item">
-              <div className="tl-icon">
-                <i className="fas fa-briefcase"></i>
-              </div>
-              <p className="tl-duration">2009 - 2013</p>
-              <h5>
-                Business Degree<span> - Sussex University</span>
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                quasi vero fugit.
-              </p>
-            </div>
-            <div className="timeline-item">
-              <div className="tl-icon">
-                <i className="fas fa-briefcase"></i>
-              </div>
-              <p className="tl-duration">2013 - 2016</p>
-              <h5>
-                Computer Science Degree<span> - Brookes University</span>
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                quasi vero fugit.
-              </p>
-            </div>
-            <div className="timeline-item">
-              <div className="tl-icon">
-                <i className="fas fa-briefcase"></i>
-              </div>
-              <p className="tl-duration">2017 - present</p>
-              <h5>
-                3d Animation<span> - Brighton University</span>
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                quasi vero fugit.
-              </p>
+              <p>Duración: 1400 horas.</p>
             </div>
           </div>
         </section>
-        <section
+        {/* <section
           id="portfolio"
           className={
             router.asPath == "/#portfolio"
@@ -466,7 +450,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section
           id="contact"
           className={
@@ -478,25 +462,25 @@ export default function Home() {
           <div className="contact-container">
             <div className="main-title">
               <h2>
-                Contact <span>Me</span>
+                Contacta<span>me</span>
                 <span className="bg-text">Contact</span>
               </h2>
             </div>
             <div className="contact-content-con">
               <div className="left-contact">
-                <h4>Contact me here</h4>
+                <h4>Comunicate conmigo por</h4>
                 <div className="contact-icons">
                   <div className="contact-icon">
-                    <a href="www.facebook.com" target="_blank">
+                    <a href="https://www.facebook.com/henryeraso.07/" target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon icon={faFacebook} />
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/henrye07" target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon icon={faGithub} />
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://www.instagram.com/henrye07/" target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon icon={faInstagram} />
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/henryeraso/" target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                   </div>
@@ -533,7 +517,7 @@ export default function Home() {
             </a>
           </Link>
         </div>
-        <div
+        {/* <div
           className={
             router.asPath == "/#portfolio"
               ? "control control-3 active-btn"
@@ -545,7 +529,7 @@ export default function Home() {
               <FontAwesomeIcon icon={faFolderTree} />
             </a>
           </Link>
-        </div>
+        </div> */}
         <div
           className={
             router.asPath == "/#contact"
