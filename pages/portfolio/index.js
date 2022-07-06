@@ -226,6 +226,7 @@ export default function Portfolio() {
 
                     <ul className="project-tech-list">
                       <li>Next Js</li>
+                      <li>Fast API</li>
                       <li>Streamlit</li>
                       <li>Machine Learning</li>
                       <li>API Rest</li>

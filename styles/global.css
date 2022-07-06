@@ -12,6 +12,8 @@
   --btn-cv-color: #ffffff;
   --text-color: #000000;
   --black-color: #000;
+  --title-portfolio-color: #f8f8f8;
+  --description-portfolio-color: #c5cad9;
   --grey-color: #f8f8f8;
   --grey-1-color: #dbe1e8;
   --grey-2-color: #a8b2d1;
@@ -26,7 +28,11 @@
 
 .light-mode {
   --primary-color: #ffffff;
+  --primary-alpha-color: #495278;
   --secondary-color: #95a3e0;
+  --secondary-alpha-color: #28987e;
+  --title-portfolio-color:#3b4363;
+  --description-portfolio-color: #a1a8bb;
   --white-icon-color: #ffffff;
   --white-color: #454e56;
   --black-color: #000;
@@ -948,7 +954,7 @@ section {
 }
 
 .projects ul li .project-title {
-  color: var(--grey-color);
+  color: var(--title-portfolio-color);
   font-size: clamp(24px, 5vw, 28px);
 }
 
@@ -960,7 +966,7 @@ section {
 
 @media (max-width: 768px) {
   .projects ul li .project-title {
-    color: var(--white);
+    color: var(--title-portfolio-color);
   }
   .projects ul li .project-title a {
     position: static;
@@ -983,7 +989,7 @@ section {
   padding: 25px;
   border-radius: 4px;
   background-color: var(--primary-alpha-color);
-  color: var(--grey-2-color);
+  color: var(--description-portfolio-color);
   font-size: 1rem;
   -webkit-box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
           box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
@@ -991,6 +997,7 @@ section {
 
 @media (max-width: 768px) {
   .projects ul li .project-description {
+    color: var(--grey-4-color);
     padding: 20px 0;
     background-color: transparent;
     -webkit-box-shadow: none;
