@@ -997,7 +997,7 @@ section {
 
 @media (max-width: 768px) {
   .projects ul li .project-description {
-    color: var(--grey-4-color);
+    color: var(--description-portfolio-color);
     padding: 20px 0;
     background-color: transparent;
     -webkit-box-shadow: none;
