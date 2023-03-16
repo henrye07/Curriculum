@@ -1,3 +1,4 @@
+import React from "react";
 import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Layout from "../components/layout";
@@ -7,8 +8,12 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import en from './locales/en/contact'; 
+import es from './locales/es/contact'; 
+
 export default function Contact() {
   const router = useRouter();
+  const t= router.locale==='en'?en:es;
   return (
     <Layout>
       <main>
@@ -23,13 +28,13 @@ export default function Contact() {
           <div className="contact-container">
             <div className="main-title">
               <h2>
-                Contacta<span>me</span>
-                <span className="bg-text">Contact</span>
+                {t.title}<span>{t.me}</span>
+                <span className="bg-text">{t.title}</span>
               </h2>
             </div>
             <div className="contact-content-con">
               <div className="left-contact">
-                <h4>Comunicate conmigo por</h4>
+                <h4>{t.description}</h4>
                 <div className="contact-icons">
                   <div className="icons">
                     <a

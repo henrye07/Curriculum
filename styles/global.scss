@@ -31,7 +31,7 @@
   --primary-alpha-color: #495278;
   --secondary-color: #95a3e0;
   --secondary-alpha-color: #28987e;
-  --title-portfolio-color:#3b4363;
+  --title-portfolio-color: #3b4363;
   --description-portfolio-color: #a1a8bb;
   --white-icon-color: #ffffff;
   --white-color: #454e56;
@@ -122,6 +122,12 @@ section {
   transition: all 0.4s ease-in-out;
   background-color: var(--color-primary);
 }
+.container-home {
+  display: none;
+  transform: translateY(-100%) scale(0);
+  transition: all 0.4s ease-in-out;
+  background-color: var(--color-primary);
+}
 
 .active {
   display: block;
@@ -155,6 +161,30 @@ section {
     transform: translateY(-3px);
   }
   svg {
+    font-size: 1.4rem;
+    color: var(--grey-2-color);
+    pointer-events: none;
+  }
+}
+
+.language-btn {
+  top: 15%;
+  right: 3%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--grey-4-color);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+  &:active {
+    transform: translateY(-3px);
+  }
+  span {
     font-size: 1.4rem;
     color: var(--grey-2-color);
     pointer-events: none;
@@ -393,7 +423,7 @@ section {
           .html {
             width: 90%;
           }
-          .css {
+          .css3 {
             width: 80%;
           }
           .js {
@@ -415,7 +445,7 @@ section {
             width: 70%;
           }
           .fastapi {
-            width: 60%;
+            width: 70%;
           }
           .git {
             width: 70%;
@@ -424,7 +454,13 @@ section {
             width: 60%;
           }
           .machine-l {
-            width: 55%;
+            width: 65%;
+          }
+          .dart {
+            width: 70%;
+          }
+          .flutter {
+            width: 60%;
           }
         }
       }
@@ -691,7 +727,7 @@ section {
 
         @media (max-width: 768px) {
           color: var(--title-portfolio-color);
-          
+
           a {
             position: static;
 
@@ -717,7 +753,7 @@ section {
         color: var(--description-portfolio-color);
         font-size: 1rem;
         box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-        
+
         @media (max-width: 768px) {
           color: var(--description-portfolio-color);
           padding: 20px 0;
@@ -1070,6 +1106,10 @@ section {
     padding: 2rem 2.5rem;
   }
 
+  .container-home {
+    padding: 2rem 2.5rem;
+  }
+
   .about-stats {
     .progress-bars {
       grid-template-columns: repeat(1, 1fr);
@@ -1099,6 +1139,9 @@ section {
   .container {
     padding: 7rem 11rem;
   }
+  .container-home {
+    padding: 0;
+  }
 
   .main-title {
     h2 {
@@ -1121,6 +1164,11 @@ section {
 }
 
 @media screen and (max-width: 1070px) {
+  .container-home {
+    padding: 35% 6rem;
+    justify-content: center;
+    align-items: center;
+  }
   .header-ctn {
     .spline {
       display: none !important;
@@ -1205,6 +1253,9 @@ section {
   .container {
     padding: 7rem 6rem;
   }
+  .container-home {
+    padding: 35% 6rem;
+  }
 
   .about-container .left-about {
     padding-right: 0rem;
@@ -1213,6 +1264,9 @@ section {
 @media screen and (max-width: 700px) {
   .container {
     padding: 7rem 3rem;
+  }
+  .container-home {
+    padding: 35% 6rem;
   }
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);

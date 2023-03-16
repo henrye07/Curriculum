@@ -31,7 +31,7 @@
   --primary-alpha-color: #495278;
   --secondary-color: #95a3e0;
   --secondary-alpha-color: #28987e;
-  --title-portfolio-color:#3b4363;
+  --title-portfolio-color: #3b4363;
   --description-portfolio-color: #a1a8bb;
   --white-icon-color: #ffffff;
   --white-color: #454e56;
@@ -126,6 +126,15 @@ section {
   background-color: var(--color-primary);
 }
 
+.container-home {
+  display: none;
+  -webkit-transform: translateY(-100%) scale(0);
+          transform: translateY(-100%) scale(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-color: var(--color-primary);
+}
+
 .active {
   display: block;
   -webkit-animation: scaleAnim 1s ease-in-out;
@@ -186,6 +195,41 @@ section {
 }
 
 .theme-btn svg {
+  font-size: 1.4rem;
+  color: var(--grey-2-color);
+  pointer-events: none;
+}
+
+.language-btn {
+  top: 15%;
+  right: 3%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--grey-4-color);
+  cursor: pointer;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.language-btn:active {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.language-btn span {
   font-size: 1.4rem;
   color: var(--grey-2-color);
   pointer-events: none;
@@ -544,7 +588,7 @@ section {
   width: 90%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
+.about-stats .progress-bars .progress-bar .progress-con .progress .css3 {
   width: 80%;
 }
 
@@ -573,7 +617,7 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .fastapi {
-  width: 60%;
+  width: 70%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .git {
@@ -585,7 +629,15 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .machine-l {
-  width: 55%;
+  width: 65%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .dart {
+  width: 70%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .flutter {
+  width: 60%;
 }
 
 .stat-title {
@@ -1428,6 +1480,9 @@ section {
   .container {
     padding: 2rem 2.5rem;
   }
+  .container-home {
+    padding: 2rem 2.5rem;
+  }
   .about-stats .progress-bars {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -1453,6 +1508,9 @@ section {
   .container {
     padding: 7rem 11rem;
   }
+  .container-home {
+    padding: 0;
+  }
   .main-title h2 .bg-text {
     font-size: 5.5rem;
   }
@@ -1473,6 +1531,15 @@ section {
 }
 
 @media screen and (max-width: 1070px) {
+  .container-home {
+    padding: 35% 6rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .header-ctn .spline {
     display: none !important;
     height: 0;
@@ -1556,6 +1623,9 @@ section {
   .container {
     padding: 7rem 6rem;
   }
+  .container-home {
+    padding: 35% 6rem;
+  }
   .about-container .left-about {
     padding-right: 0rem;
   }
@@ -1564,6 +1634,9 @@ section {
 @media screen and (max-width: 700px) {
   .container {
     padding: 7rem 3rem;
+  }
+  .container-home {
+    padding: 35% 6rem;
   }
   .about-stats .progress-bars {
     -ms-grid-columns: (1fr)[1];
