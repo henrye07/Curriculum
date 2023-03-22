@@ -5,7 +5,7 @@ export default {
     work: "Mis Proyectos",
   },
   introduction:
-    "Aqui hay algo de mi trabajo que yo he desarrollado en diferentes lenguajes.",
+    "Aquí hay algo de mi trabajo que yo he desarrollado en diferentes lenguajes.",
   project1: {
     title: "E-Commerce",
     description:
@@ -38,10 +38,10 @@ export default {
     title: "App de Lavadero, Parqueadero y Pagos",
     description:
       "Aplicación que permite gestionar los lavados de\
-    vehiculos, el parqueadero diario y mensual, inventario\
+      vehículos, el parqueadero diario y mensual, inventario\
     de la empresa, pagos y gastos generales e individuales\
     para socios y empleados, usuarios con permisos\
-    especiales(Admin) o permisos limitados(Secretari@)",
+    especiales (Admin) o permisos limitados (Secretari@)",
     link: "#",
     place: "",
     tools: ["Next Js", "Node Js", "Prime React", "GraphQL"],
@@ -52,7 +52,7 @@ export default {
   project4: {
     title: "Soft Asesorias",
     description:
-      "Landing Page de empresa provedora de servicios academicos de universitarios, con direccionamiento automatico a whatsapp Business",
+      "Landing Page de empresa proveedora de servicios académicos de universitarios, con direccionamiento automático a whatsapp Business",
 
     link: "https://soft-asesorias.vercel.app/",
     place: "",
@@ -66,11 +66,11 @@ export default {
     private: "Proyecto Privado",
     title: "Proyecto de Grado (Tesis)",
     description: [
-      "Aplicación que permite a traves de un archivo excel o \
+      "Aplicación que permite a través de un archivo Excel o \
       CVS que contenga los datos de permeabilidad y porosidad \
       efectiva de un yacimiento, estimar las gargantas porales\
-      y caracterizar las diferentes unidades hidraulicas a\
-      traves del aprendizaje de maquinas no supervisado",
+      y caracterizar las diferentes unidades hidráulicas  a\
+      través del aprendizaje de máquinas no supervisado",
     ],
     link: "#",
     place: "",
