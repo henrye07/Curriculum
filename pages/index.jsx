@@ -10,8 +10,8 @@ import es from "./locales/es/home";
 export default function Home() {
   const splineRef = useRef();
   const router = useRouter();
-  async function onLoad(splineApp) {
-    splineRef.current = await splineApp;
+  function onLoad(splineApp) {
+    splineRef.current = splineApp;
   }
   const t = router.locale === "en" ? en : es;
   return (

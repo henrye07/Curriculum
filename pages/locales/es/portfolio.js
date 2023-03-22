@@ -9,7 +9,7 @@ export default {
   project1: {
     title: "E-Commerce",
     description:
-      "Proyecto desarrollado en el curso de desarrollo Web Full Stack con Python y Javascript inpartido por",
+      "Proyecto desarrollado en el curso de desarrollo Web Full Stack con Python y Javascript realizado por",
     link: "https://polotic.misiones.gob.ar/",
     place: "PoloTic",
     tools: ["Django", "JavaScript", "Bulma", "API Rest"],
@@ -52,7 +52,7 @@ export default {
   project4: {
     title: "Soft Asesorias",
     description:
-      "LandPage de empresa provedora de servicios academicos de universitarios, con direccionamiento automatico a whatsapp Business",
+      "Landing Page de empresa provedora de servicios academicos de universitarios, con direccionamiento automatico a whatsapp Business",
 
     link: "https://soft-asesorias.vercel.app/",
     place: "",
@@ -64,7 +64,7 @@ export default {
   },
   project5: {
     private: "Proyecto Privado",
-    title: "Proyecto de Grado",
+    title: "Proyecto de Grado (Tesis)",
     description: [
       "Aplicación que permite a traves de un archivo excel o \
       CVS que contenga los datos de permeabilidad y porosidad \

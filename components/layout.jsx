@@ -44,9 +44,7 @@ export default function Layout({ children }) {
           className={router.asPath == "/" ? "control active-btn" : "control"}
         >
           <Link href="/">
-            <a>
-              <FontAwesomeIcon icon={faHome} />
-            </a>
+            <FontAwesomeIcon icon={faHome} />
           </Link>
         </div>
         <div
@@ -55,9 +53,7 @@ export default function Layout({ children }) {
           }
         >
           <Link href="/about">
-            <a>
-              <FontAwesomeIcon icon={faAddressCard} />
-            </a>
+            <FontAwesomeIcon icon={faAddressCard} />
           </Link>
         </div>
         <div
@@ -66,9 +62,7 @@ export default function Layout({ children }) {
           }
         >
           <Link href="/portfolio">
-            <a>
-              <FontAwesomeIcon icon={faFolderTree} />
-            </a>
+            <FontAwesomeIcon icon={faFolderTree} />
           </Link>
         </div>
         <div
@@ -77,9 +71,7 @@ export default function Layout({ children }) {
           }
         >
           <Link href="/contact">
-            <a>
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
+            <FontAwesomeIcon icon={faEnvelope} />
           </Link>
         </div>
       </div>

@@ -1,39 +1,30 @@
 export default {
-    about: "About",
-    me: "Me",
-    change_locale: 'Change locale to "{{changeTo}}"',
-    personalInformation: {
-      title: "Personal Information",
-      paragraph: {
-        first:
-          "Petroleum Enginner of Industrial University of \
-              Santander. I under for make projects with great dedication, \
-              organization, responsability and compromised. Although of my \
-              experience in field, I have undergraded because of interpreted \
-              in the best way the theorics fundaments.",
-        second:
-          "Also my works in enviroments job with no petroleum,\
-              that has grow me up with communicatives skills for team work and always\
-              I adapt to every job enviroment.",
-      },
-      download: "Download Curriculum",
+  about: "About",
+  me: "Me",
+  personalInformation: {
+    title: "Personal Information",
+    paragraph: {
+      first: `I am a recent graduate of a Petroleum Engineer from the Industrial University of Santander with skills in programming, advanced mathematics and problem analysis. I am passionate about solving complex problems using innovative technologies and I am enthusiastic to apply my skills to contribute to the success of companies.`,
+      second:
+        "In addition, the work in non-professional work environments has shaped me as someone with communication skills to work in a team and know how to adapt to any work environment.",
     },
-    mySkills: "My skills in programming",
-    timeline: {
-      title: "Timeline",
-      profession: "Petroleum Enginnering",
-      university: "Industrial University of Santander",
-      degree: "Bachelor Degree.",
-      course1: {
-        title: "Introduction to CMG and CMOST for Thermical Application",
-        duration: "Duration: 40 hours",
-      },
-      course2: {
-        title:
-          "Formation program skills in programming with main in app movil development",
-        duration: "Duration: 1400 hours",
-        location: "Antioquia University",
-      },
+    download: "Download Curriculum",
+  },
+  mySkills: "My skills in programming",
+  timeline: {
+    title: "Timeline",
+    profession: "Petroleum Enginnering",
+    university: "Industrial University of Santander",
+    degree: "Bachelor Degree.",
+    course1: {
+      title: "Introduction to CMG and CMOST for Thermical Application",
+      duration: "Duration: 40 hours",
     },
-  };
-  
+    course2: {
+      title:
+        "Formation program skills in programming with main in app movil development",
+      duration: "Duration: 1400 hours",
+      location: "Antioquia University",
+    },
+  },
+};

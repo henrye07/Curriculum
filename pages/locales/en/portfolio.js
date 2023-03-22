@@ -9,7 +9,7 @@ export default {
   project1: {
     title: "E-Commerce",
     description:
-      "Project development in the course of Web Develepment Full Stack with Python and Javascript maken for",
+      "Project developed in the Full Stack Web development course with Python and Javascript by",
     link: "https://polotic.misiones.gob.ar/",
     place: "PoloTic",
     tools: ["Django", "JavaScript", "Bulma", "API Rest"],
@@ -19,10 +19,10 @@ export default {
     },
   },
   project2: {
-    title: "Inventary and Sell App",
+    title: "Inventory and Sales Application",
     description: [
-      "App for make products inventary and your respective selling to the customers with the learning in",
-      ". Just the authorized users have access to all the functions in the app.",
+      "Application to make inventory of products and their respective sales to customers with what was learned in ",
+      ". Only authorized users can access to the different functionalities",
     ],
     link: "https://www.misiontic2022.gov.co/portal/",
     place: "MisionTic-2022",
@@ -33,9 +33,8 @@ export default {
   },
   project3: {
     private: "Private Project",
-    title: "Washing, Parking and Payments App",
-    description:
-      "App that allow manage the vehicles washing, dairy and month parking, inventary of the enterprise, payments to employers and managers, general and specific spends, special permissions to users (Admin) or limit permissions (Secretary)",
+    title: "Laundry, Parking and Payments App",
+    description: `Application that allows you to manage car washes, daily and monthly parking, company inventory, payments and expenses, users with special permissions (Admin) or limited permissions (Secretary).`,
     link: "#",
     place: "",
     tools: ["Next Js", "Node Js", "Prime React", "GraphQL"],
@@ -45,9 +44,8 @@ export default {
   },
   project4: {
     title: "Soft Asesorias",
-    description: [
-      "Land page of enterprise who give academics services to universitaries persons, with automatic link for whatsapp Business",
-    ],
+    description:
+      "Landing Page of a company who provides academic services for university students, with automatic routing to WhatsApp Business",
     link: "",
     place: "",
     tools: ["Next Js"],
@@ -58,10 +56,10 @@ export default {
   },
   project5: {
     private: "Private Project",
-    title: "Thesis",
-    description: [
-      "App that allow received Excel or CVS file that container data of permeability and effective porosity in reservory, for estimate the porales throat and characterized the differents hidraulic units although machine learning no supervised",
-    ],
+    title: "Graduation Project (Thesis)",
+    description: `Application that allows or support an Excel or CVS file that contains the permeability and effective porosity data 
+      of a reservoir, to estimate the pore throats and characterize the different hydraulic units through unsupervised 
+      machine learning`,
     link: "",
     place: "",
     tools: [

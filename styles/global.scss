@@ -14,6 +14,8 @@
   --black-color: #000;
   --title-portfolio-color: #f8f8f8;
   --description-portfolio-color: #c5cad9;
+  --home-paragraph-color: #ffffff;
+  --name-color: #0a7b39;
   --grey-color: #f8f8f8;
   --grey-1-color: #dbe1e8;
   --grey-2-color: #a8b2d1;
@@ -33,6 +35,8 @@
   --secondary-alpha-color: #28987e;
   --title-portfolio-color: #3b4363;
   --description-portfolio-color: #a1a8bb;
+  --home-paragraph-color: #12181b;
+  --name-color: #271f57;
   --white-icon-color: #ffffff;
   --white-color: #454e56;
   --black-color: #000;
@@ -281,7 +285,7 @@ section {
     min-height: 100vh;
     .left-header {
       background-color: rgba(255, 255, 255, 0.3);
-      backdrop-filter: blur(20px);
+      backdrop-filter: blur(50px);
       box-shadow: var(--box-shadow-1);
       // border-radius: 1rem;
       padding: 0 1rem;
@@ -304,19 +308,19 @@ section {
         transition: all 0.4s ease-in-out;
         .name {
           font-size: 3rem;
-          color: #ffffff;
+          color: var(--home-paragraph-color);
           span {
-            color: #0a7b39;
+            color: var(--name-color);
           }
           z-index: 1;
         }
         p {
-          color: #ffffff;
+          color: var(--home-paragraph-color);
           margin: 1.5rem 0;
           line-height: 2rem;
           // color: var(--white-color);
           z-index: 1;
-          font-weight: 400;
+          font-weight: 600;
         }
       }
     }
