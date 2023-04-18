@@ -44,7 +44,11 @@ export default function Home() {
                   <p>{t.description}</p>
                   <div className="btn-con">
                     <a
-                      href="/curriculum vitae.pdf"
+                      href={
+                        router.locale === "en"
+                          ? "/curriculum vitae en.pdf"
+                          : "/curriculum vitae.pdf"
+                      }
                       className="main-btn"
                       target="_blank"
                       rel="noopener noreferrer"
