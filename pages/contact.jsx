@@ -8,8 +8,8 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import en from './locales/en/contact'; 
-import es from './locales/es/contact'; 
+import en from '../components//locales/en/contact'; 
+import es from '../components//locales/es/contact'; 
 
 export default function Contact() {
   const router = useRouter();

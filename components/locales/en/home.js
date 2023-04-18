@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   hello: `Hi, I'm`,
   name: "Henry Eraso",
   profession: "a Petroleum Engineer",

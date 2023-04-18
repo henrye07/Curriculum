@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import Layout from "../../components/layout";
-import en from "../locales/en/portfolio";
-import es from "../locales/es/portfolio";
+import en from "../../components/locales/en/portfolio";
+import es from "../../components/locales/es/portfolio";
 
 export default function Portfolio() {
   const router = useRouter();

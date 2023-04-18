@@ -1,4 +1,4 @@
-export default {
+module.exports ={
   about: "About",
   me: "Me",
   personalInformation: {

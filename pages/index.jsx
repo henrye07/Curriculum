@@ -4,8 +4,8 @@ import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 import Spline from "@splinetool/react-spline";
 import Layout from "../components/layout";
-import en from "./locales/en/home";
-import es from "./locales/es/home";
+import en from "../components/locales/en/home";
+import es from "../components//locales/es/home";
 
 export default function Home() {
   const splineRef = useRef();

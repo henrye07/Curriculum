@@ -8,8 +8,8 @@ import {
   faHouseLaptop,
 } from "@fortawesome/free-solid-svg-icons";
 import Layout from "../components/layout";
-import en from "./locales/en/about";
-import es from "./locales/es/about";
+import en from "../components/locales/en/about";
+import es from "../components/locales/es/about";
 
 export default function About() {
   const languages = [
