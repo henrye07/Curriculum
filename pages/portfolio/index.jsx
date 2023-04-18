@@ -1,10 +1,14 @@
+import React from "react";
 import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import Layout from "../../components/layout";
+import en from "../../components/locales/en/portfolio";
+import es from "../../components/locales/es/portfolio";
 
 export default function Portfolio() {
   const router = useRouter();
+  const t = router.locale === "en" ? en : es;
   return (
     <Layout>
       <main>
@@ -18,14 +22,11 @@ export default function Portfolio() {
         >
           <div className="main-title">
             <h2>
-              Mi <span>Portafolio</span>
-              <span className="bg-text">My Work</span>
+              {t.title.me} <span>{t.title.portfolio}</span>
+              <span className="bg-text">{t.title.work}</span>
             </h2>
           </div>
-          <p className="port-text">
-            Aqui hay algo de mi trabajo que yo he desarrollado en diferentes
-            lenguajes.
-          </p>
+          <p className="port-text">{t.introduction}</p>
           <div className="projects">
             <ul>
               <li>
@@ -34,42 +35,34 @@ export default function Portfolio() {
                     <p className="project-overline"></p>
 
                     <h3 className="project-title">
-                      <a
-                        href={
-                          "https://github.com/henrye07/eCommerce-Django-Bulma"
-                        }
-                      >
-                        E-commerce
+                      <a href={t.project1.repositories.github}>
+                        {t.project1.title}
                       </a>
                     </h3>
 
                     <div className="project-description">
                       <p>
-                        Proyecto desarrollado en el curso de desarrollo Web Full
-                        Stack con Python y Javascript inpartido por{" "}
-                        <a href="https://polotic.misiones.gob.ar/">PoloTic</a>{" "}
+                        {t.project1.description}{" "}
+                        <a href={t.project1.link}>{t.project1.place}</a>{" "}
                       </p>
                     </div>
 
                     <ul className="project-tech-list">
-                      <li>Django</li>
-                      <li>JavaScript</li>
-                      <li>Bulma</li>
-                      <li>API Rest</li>
+                      {t.project1.tools.map((tool) => {
+                        return <li key={tool}>{tool}</li>;
+                      })}
                     </ul>
 
                     <div className="project-links">
                       <a
-                        href={
-                          "https://github.com/henrye07/eCommerce-Django-Bulma#"
-                        }
+                        href={t.project1.repositories.github}
                         aria-label="GitHub Link"
                       >
                         <FontAwesomeIcon icon={faGithub} />
                       </a>
 
                       <a
-                        href={"https://youtu.be/bAxOszRLo00#"}
+                        href={t.project1.repositories.youtube}
                         aria-label="External Link"
                         className="external"
                       >
@@ -80,7 +73,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="project-image">
-                  <a href={"https://youtu.be/bAxOszRLo00#"}>
+                  <a href={t.project1.repositories.youtube}>
                     <img src="/pj1.png" alt={"title"} className="img" />
                   </a>
                 </div>
@@ -91,32 +84,28 @@ export default function Portfolio() {
                     <p className="project-overline"></p>
 
                     <h3 className="project-title">
-                      <a href={"#"}>App de Inventario y Ventas</a>
+                      <a href={t.project2.repositories.github}>
+                        {t.project2.title}
+                      </a>
                     </h3>
 
                     <div className="project-description">
                       <p>
-                        Aplicación para realizar inventario de productos y su
-                        respectivas ventas a los clientes con lo aprendido en{" "}
-                        <a href="https://www.misiontic2022.gov.co/portal/">
-                          MisionTic-2022
-                        </a>
-                        . Solo los usuarios autorizados pueden acceder a las
-                        diferentes funcionalidades{" "}
+                        {t.project2.description[0]}{" "}
+                        <a href={t.project2.link}>{t.project2.place}</a>
+                        {t.project2.description[1]}{" "}
                       </p>
                     </div>
 
                     <ul className="project-tech-list">
-                      <li>React Js</li>
-                      <li>Node Js</li>
-                      <li>Prime React</li>
-                      <li>Auth0</li>
-                      <li>API Rest</li>
+                      {t.project2.tools.map((tool) => {
+                        return <li key={tool}>{tool}</li>;
+                      })}
                     </ul>
 
                     <div className="project-links">
                       <a
-                        href={"https://github.com/henrye07/misionTic-Ciclo3"}
+                        href={t.project2.repositories.github}
                         aria-label="GitHub Link"
                       >
                         <FontAwesomeIcon icon={faGithub} />
@@ -126,7 +115,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="project-image">
-                  <a href={"https://github.com/henrye07/misionTic-Ciclo3"}>
+                  <a href={t.project2.repositories.github}>
                     <img src="/pj2.png" alt={"title"} className="img" />
                   </a>
                 </div>
@@ -134,33 +123,28 @@ export default function Portfolio() {
               <li>
                 <div className="project-content">
                   <div>
-                    <p className="project-overline">Proyecto Privado</p>
+                    <p className="project-overline">{t.project3.private}</p>
 
                     <h3 className="project-title">
-                      <a href={"#"}>App de Lavadero, Parqueadero y Pagos</a>
+                      <a href={t.project3.repositories.github}>
+                        {t.project3.title}
+                      </a>
                     </h3>
 
                     <div className="project-description">
-                      <p>
-                        Aplicación que permite gestionar los lavados de
-                        vehiculos, el parqueadero diario y mensual, inventario
-                        de la empresa, pagos y gastos generales e individuales
-                        para socios y empleados, usuarios con permisos
-                        especiales(Admin) o permisos limitados(Secretari@){" "}
-                      </p>
+                      <p>{t.project3.description} </p>
                     </div>
 
                     <ul className="project-tech-list">
-                      <li>Next Js</li>
-                      <li>Node Js</li>
-                      <li>Prime React</li>
-                      <li>GraphQL</li>
+                      {t.project3.tools.map((tool) => {
+                        return <li key={tool}>{tool}</li>;
+                      })}
                     </ul>
                   </div>
                 </div>
 
                 <div className="project-image">
-                  <a href={"#"}>
+                  <a href={t.project3.repositories.github}>
                     <img src="/pj3.png" alt={"title"} className="img" />
                   </a>
                 </div>
@@ -171,26 +155,24 @@ export default function Portfolio() {
                     <p className="project-overline"></p>
 
                     <h3 className="project-title">
-                      <a href={"https://soft-asesorias.vercel.app/"}>
-                        Soft Asesorias
+                      <a href={t.project4.repositories.github}>
+                        {t.project4.title}
                       </a>
                     </h3>
 
                     <div className="project-description">
-                      <p>
-                        LandPage de empresa provedora de servicios academicos de
-                        universitarios, con direccionamiento automatico a
-                        whatsapp Business{" "}
-                      </p>
+                      <p>{t.project4.description} </p>
                     </div>
 
                     <ul className="project-tech-list">
-                      <li>Next Js</li>
+                      {t.project4.tools.map((tool) => {
+                        return <li key={tool}>{tool}</li>;
+                      })}
                     </ul>
 
                     <div className="project-links">
                       <a
-                        href={"https://github.com/henrye07/Soft_Asesorias"}
+                        href={t.project4.repositories.github}
                         aria-label="GitHub Link"
                       >
                         <FontAwesomeIcon icon={faGithub} />
@@ -200,7 +182,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="project-image">
-                  <a href={"https://soft-asesorias.vercel.app/"}>
+                  <a href={t.project4.repositories.oficialPage}>
                     <img src="/pj4.png" alt={"title"} className="img" />
                   </a>
                 </div>
@@ -208,35 +190,28 @@ export default function Portfolio() {
               <li>
                 <div className="project-content">
                   <div>
-                    <p className="project-overline">Proyecto Privado</p>
+                    <p className="project-overline">{t.project5.private}</p>
 
                     <h3 className="project-title">
-                      <a href={"#"}>Proyecto de Grado</a>
+                      <a href={t.project5.repositories.github}>
+                        {t.project5.title}
+                      </a>
                     </h3>
 
                     <div className="project-description">
-                      <p>
-                        Aplicación que permite a traves de un archivo excel o
-                        csv que contenga los datos de permeabilidad y porosidad
-                        efectiva de un yacimiento, estimar las gargantas porales
-                        y caracterizar las diferentes unidades hidraulicas a
-                        traves del aprendizaje de maquinas no supervisado{" "}
-                      </p>
+                      <p>{t.project5.description} </p>
                     </div>
 
                     <ul className="project-tech-list">
-                      <li>Next Js</li>
-                      <li>Fast API</li>
-                      <li>Streamlit</li>
-                      <li>Machine Learning</li>
-                      <li>API Rest</li>
-                      <li>GraphQL</li>
+                      {t.project5.tools.map((tool) => {
+                        return <li key={tool}>{tool}</li>;
+                      })}
                     </ul>
                   </div>
                 </div>
 
                 <div className="project-image">
-                  <a href={"#"}>
+                  <a href={t.project5.repositories.github}>
                     <img src="/pj5.png" alt={"title"} className="img" />
                   </a>
                 </div>

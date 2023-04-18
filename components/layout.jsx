@@ -1,3 +1,4 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAddressCard,
@@ -9,11 +10,17 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Head from "next/head";
-
 export default function Layout({ children }) {
   const router = useRouter();
   const handleClcikTheme = () => {
     document.body.classList.toggle("light-mode");
+  };
+  const locale = router.locale;
+  const changeLanguage = () => {
+    router.push(router.pathname, router.asPath, {
+      locale: router.locale === "en" ? "es" : "en",
+      scroll: false,
+    });
   };
   return (
     <div>
@@ -24,7 +31,7 @@ export default function Layout({ children }) {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossOrigin="true"
+          crossOrigin="use-credentials"
         />
         {/* <link
           href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
@@ -37,9 +44,7 @@ export default function Layout({ children }) {
           className={router.asPath == "/" ? "control active-btn" : "control"}
         >
           <Link href="/">
-            <a>
-              <FontAwesomeIcon icon={faHome} />
-            </a>
+            <FontAwesomeIcon icon={faHome} />
           </Link>
         </div>
         <div
@@ -48,9 +53,7 @@ export default function Layout({ children }) {
           }
         >
           <Link href="/about">
-            <a>
-              <FontAwesomeIcon icon={faAddressCard} />
-            </a>
+            <FontAwesomeIcon icon={faAddressCard} />
           </Link>
         </div>
         <div
@@ -59,9 +62,7 @@ export default function Layout({ children }) {
           }
         >
           <Link href="/portfolio">
-            <a>
-              <FontAwesomeIcon icon={faFolderTree} />
-            </a>
+            <FontAwesomeIcon icon={faFolderTree} />
           </Link>
         </div>
         <div
@@ -70,14 +71,23 @@ export default function Layout({ children }) {
           }
         >
           <Link href="/contact">
-            <a>
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
+            <FontAwesomeIcon icon={faEnvelope} />
           </Link>
         </div>
       </div>
       <div className="theme-btn" onClick={handleClcikTheme}>
         <FontAwesomeIcon icon={faAdjust} />
+      </div>
+      <div
+        onClick={changeLanguage}
+        defaultValue={locale}
+        className="language-btn"
+      >
+        {locale === "en" ? (
+          <span onClick={changeLanguage}>ES</span>
+        ) : (
+          <span onClick={changeLanguage}>EN</span>
+        )}
       </div>
     </div>
   );

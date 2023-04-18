@@ -14,14 +14,14 @@
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@splinetool/react-spline": "^2.2.1",
-    "@splinetool/runtime": "^0.9.72",
-    "next": "12.2.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.269",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "eslint": "8.18.0",
-    "eslint-config-next": "12.2.0"
+    "eslint-config-next": "^13.2.4"
   }
 }
